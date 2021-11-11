@@ -1,0 +1,87 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<style>
+		body {
+			background-color: #fff;
+			padding: 30px;
+			max-width: 820px;
+			color: #888;
+		}
+
+		hr {
+			opacity: 0.15;
+			margin: 25px 0;
+			border-width: 2px;
+		}
+
+		.header {
+			height: 50px;
+		}
+
+		.header img {
+			position: absolute;
+			left: 30px;
+			width: 142px;
+			height: auto;
+		}
+
+		.header span {
+			font-size: 28px;
+			margin-left: 160px;
+			color: #999;
+		}
+
+		.body {
+			line-height: 1.5;
+		}
+
+		.body p {
+			color: #aaa;
+		}
+
+		.footer span {
+			font-size: 13px;
+			color: #aaa;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<img src="https://www.investcorp.com/wp-content/uploads/2019/11/TPX-Communications.png">
+		<span class="light">Order {orderId}</span>
+	</div>
+	<hr>
+	<div class="body">
+		<h3>Welcome to Express Setup for UCx</h3>
+		<h5 class="light">
+			We are excited to help you setup your new phone system!
+			<br>
+			Please click or copy the link below to get started.
+			<br>
+			<br>
+			<a href="https://express.tpx.com/{accessLink}/activate" target="_blank">
+				https://express.tpx.com/{accessLink}/activate
+			</a>
+			<br>
+			<br>
+			<strong>Access Code:</strong> {accessCode}
+			<br>
+		</h5>
+		<p>
+			You will need the access code to complete your activation.
+		</p>
+	</div>
+	<hr>
+	<div class="footer">
+		<h6 class="light">
+			Have any questions or need some help? Please give us a call 877-344-7441 or email <a href="#">support@tpx.com</a>
+		</h6>
+		<br>
+		<br>
+		<span>
+			<strong>Note:</strong> The activation link will expire on {expiresOnDate}
+		</span>
+	</div>
+</body>
+</html>
