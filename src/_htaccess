@@ -1,2 +1,0 @@
-#RewriteCond %{HTTPS} off 
-#RewriteRule ^(.*)$ https://eng-apps.tpx.com/$1/ [L,R=301]
