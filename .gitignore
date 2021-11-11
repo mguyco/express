@@ -2,6 +2,7 @@
 node_modules
 api
 public
+webex
 
 # local env files
 .env.local
