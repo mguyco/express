@@ -37,11 +37,11 @@ export default {
 
 			if(this.getProp(response, 'account')) {
 				this.setState({
+					valid: true,
 					catalog: {
 						...catalog,
 						...response.catalog
 					},
-					valid: true,
 					order: {
 						id: response.orderId,
 						account: response.account,

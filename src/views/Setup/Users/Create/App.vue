@@ -48,7 +48,7 @@
 							background-color="primary"
 							right>
 							<v-tab 
-								v-for="(item,index) in tabs.filter(tabItem => tabItem.visible === true)"
+								v-for="(item,index) in visibleTabs"
 								:key="`tabs-${index}`">
 								{{ item.title }}
 							</v-tab>
@@ -73,12 +73,12 @@
 							<v-row class="mb-5">
 								<v-col cols="12" align="center">
 									<v-avatar
-										size="72"
+										size="96"
 										tile>
 										<v-img 
-											src="https://www.flaticon.com/svg/static/icons/svg/567/567902.svg" />
+											src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" />
 									</v-avatar>
-									<div class="text-h4 font-weight-light">
+									<div class="mt-5 text-h4 font-weight-light">
 										User Profile
 									</div>
 									<div class="text-body-1 text--secondary">
@@ -138,7 +138,7 @@
 									cols="4" 
 									offset="4"
 									align="center">
-									<template v-if="catalog.phones.length == 0">
+									<template v-if="catalog.bundles.length == 1">
 										<v-btn 
 											class="px-5 mb-5 green white--text" 
 											@click="save"
@@ -172,13 +172,22 @@
 				</v-tab-item>
 
 				<!-- Bundle-->
-				<v-tab-item v-if="tabs[1].visible">
+				<v-tab-item>
 					<v-container fluid>
-						<v-row no-gutters class="mb-5">
+						<v-row class="mb-5">
 							<v-col cols="12" align="center">
-								<v-icon size="64" color="grey">mdi-account-star</v-icon>
-								<div class="title font-weight-light">User Bundle</div>
-								<div class="text-caption grey--text">Select one of the bundles below for this user</div>
+								<v-avatar
+									size="96"
+									tile>
+									<v-img 
+										src="https://cdn-icons-png.flaticon.com/512/3190/3190493.png" />
+								</v-avatar>
+								<div class="mt-5 text-h4 font-weight-light">
+									User Bundle
+								</div>
+								<div class="text-body-1 text--secondary">
+									Select the bundle that best matches the services needed for this user
+								</div>
 							</v-col>
 						</v-row>
 						<v-row align="center" justify="center">
@@ -240,18 +249,15 @@
 												color="primary"
 												class="px-5 mt-1"
 												@click="selectBundle(null)" 
-												dark
-												rounded
-												outlined>
+												dark>
 												<v-icon left>mdi-check</v-icon> 
 												Selected
 											</v-btn>
 											<v-btn 
-												color="green"
+												color="primary"
 												class="px-5 mt-1"
 												@click="selectBundle(item)" 
 												dark 
-												rounded
 												v-else>Select</v-btn>
 											<v-spacer />
 										</v-card-actions>
@@ -259,13 +265,15 @@
 								</v-col>
 							</template>
 						</v-row>
-						<v-row class="mt-5">
+						<v-row class="mt-15">
 							<v-col cols="12" align="center">
 								<template v-if="catalog.phones.length <= 1">
 									<v-btn 
-										class="px-5 mb-5 green white--text" 
+										class="px-5 mb-5" 
+										color="success"
 										@click="save"
-										rounded>Save User
+										rounded
+										large>Save User
 									</v-btn>
 								</template>
 								<template v-else>
@@ -281,18 +289,17 @@
 				</v-tab-item>
 
 				<!-- Phone -->
-				<v-tab-item v-if="tabs[2].visible">
+				<v-tab-item>
 					<v-container>
 						<v-row class="mb-5">
 							<v-col cols="12" align="center">
 								<v-avatar
-									size="72"
+									size="96"
 									tile>
 									<v-img 
-										src="https://www.flaticon.com/svg/static/icons/svg/1869/1869776.svg" />
+										src="https://cdn-icons.flaticon.com/png/512/4213/premium/4213179.png?token=exp=1636663622~hmac=182293f593150735bb934d9d8a242c27" />
 								</v-avatar>
-
-								<div class="text-h4 font-weight-light">
+								<div class="mt-5 text-h4 font-weight-light">
 									Business Phone
 								</div>
 								<div class="text-body-1 text--secondary">
@@ -404,7 +411,7 @@
 								</v-col>
 							</template>
 						</v-row>
-						<v-row class="mt-5">
+						<v-row class="mt-15">
 							<v-col cols="12" align="center">
 								<v-fade-transition>
 									<v-btn 
@@ -553,6 +560,9 @@ export default {
 		},
 		phones() {
 			return this.$store.getters.phones
+		},
+		visibleTabs() {
+			return this.tabs.filter(item => item.visible === true)
 		}
 	},
 	data() {

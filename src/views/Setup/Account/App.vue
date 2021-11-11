@@ -123,7 +123,7 @@
 													</v-col>
 													<v-col cols="3">
 														<v-select
-															v-model="data.extensions.digits"
+															v-model="data.extension.digits"
 															:items="['2 Digits','3 Digits','4 Digits']" />
 													</v-col>
 												</v-row>

@@ -253,7 +253,7 @@ export default {
 		},
 		setDialog(dialog) {
 			for(let key in dialog) {
-				if(Object.prototype.hasOwnProperty.call(this.dialog, key)) {
+				if(this.getProp(this.dialog, key)) {
 					this.dialog[key] = {
 						...this.dialog[key],
 						...dialog[key]
@@ -352,7 +352,7 @@ export default {
 			})
 		},
 		initialize() {
-			this.users = (Object.prototype.hasOwnProperty.call(this.data, 'users') ? this.data.users : [])
+			this.users = (this.getProp(this.data, 'users') ? this.data.users : [])
 			//this.users.reverse()
 		}
 	},

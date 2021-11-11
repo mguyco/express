@@ -146,7 +146,7 @@
 					</template>
 					<v-list>
 						<v-subheader>
-							Desktop Phones
+							Business Phones
 						</v-subheader>
 						<template v-for="(item, index) in phones">
 							<v-list-item :key="`phone-${index}`">
@@ -215,7 +215,7 @@
 									<v-avatar 
 										size="32"
 										tile>
-										<img src="https://www.flaticon.com/svg/static/icons/svg/2991/2991241.svg">
+										<img src="https://cdn-icons.flaticon.com/png/512/3044/premium/3044741.png?token=exp=1636663854~hmac=07f7c66bba623f50f2a9077bc1c887a6">
 									</v-avatar>
 								</v-list-item-avatar>
 								<v-list-item-content>
@@ -241,7 +241,7 @@
 									<v-avatar 
 										size="32"
 										tile>
-										<img src="https://image.flaticon.com/icons/svg/572/572790.svg">
+										<img src="https://cdn-icons.flaticon.com/png/512/869/premium/869161.png?token=exp=1636663835~hmac=15abb48c44a99b12d7ce90756885486f">
 									</v-avatar>
 								</v-list-item-avatar>
 								<v-list-item-content>
@@ -262,7 +262,7 @@
 									<v-avatar 
 										size="32"
 										tile>
-										<img src="https://www.flaticon.com/svg/static/icons/svg/3011/3011121.svg">
+										<img src="https://cdn-icons-png.flaticon.com/512/3011/3011121.png">
 									</v-avatar>
 								</v-list-item-avatar>
 								<v-list-item-content>

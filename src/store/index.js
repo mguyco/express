@@ -32,6 +32,8 @@ const mutations = {
 		const item = state.catalog[product.catalog].find(item => item.productId === product.productId)
 		const quantity = product.quantity
 
+		console.log(product.productId)
+		console.log(state.catalog)
 		console.log('Quantity:' + quantity)
 
 		if(item) {
