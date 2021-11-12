@@ -72,12 +72,6 @@
 						<v-container>
 							<v-row class="mb-5">
 								<v-col cols="12" align="center">
-									<v-avatar
-										size="96"
-										tile>
-										<v-img 
-											src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" />
-									</v-avatar>
 									<div class="mt-5 text-h4 font-weight-light">
 										User Profile
 									</div>
@@ -176,12 +170,6 @@
 					<v-container fluid>
 						<v-row class="mb-5">
 							<v-col cols="12" align="center">
-								<v-avatar
-									size="96"
-									tile>
-									<v-img 
-										src="https://cdn-icons-png.flaticon.com/512/3190/3190493.png" />
-								</v-avatar>
 								<div class="mt-5 text-h4 font-weight-light">
 									User Bundle
 								</div>
@@ -293,12 +281,6 @@
 					<v-container>
 						<v-row class="mb-5">
 							<v-col cols="12" align="center">
-								<v-avatar
-									size="96"
-									tile>
-									<v-img 
-										src="https://cdn-icons.flaticon.com/png/512/4213/premium/4213179.png?token=exp=1636663622~hmac=182293f593150735bb934d9d8a242c27" />
-								</v-avatar>
 								<div class="mt-5 text-h4 font-weight-light">
 									Business Phone
 								</div>

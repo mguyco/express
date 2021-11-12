@@ -2,6 +2,7 @@
 	<v-toolbar flat color="transparent" :height="height">
 		<v-row>
 			<v-col cols="10" offset="1">
+				<!--
 				<svg width="216px" height="81px" viewBox="0 0 216 81">
 					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 						<g transform="translate(-303.000000, -17.000000)">
@@ -29,6 +30,7 @@
 						</g>
 					</g>
 				</svg>
+			-->
 				<div class="text-center">
 					<div class="text-h1 font-weight-thin white--text">
 						<span>{{ title }}</span>

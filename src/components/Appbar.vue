@@ -9,6 +9,7 @@
 			<!-- <v-app-bar-nav-icon /> -->
 		</v-fade-transition>
 		<v-toolbar-title>
+			<!--
 			<svg width="216px" height="81px" viewBox="0 0 216 81">
 				<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 					<g transform="translate(-303.000000, -17.000000)">
@@ -36,6 +37,7 @@
 					</g>
 				</g>
 			</svg>
+		-->
 
 			<span class="text-h5 pl-5 font-weight-light" style="letter-spacing: 2px !important">
 				Express Setup for UCx
@@ -215,7 +217,7 @@
 									<v-avatar 
 										size="32"
 										tile>
-										<img src="https://cdn-icons.flaticon.com/png/512/3044/premium/3044741.png?token=exp=1636663854~hmac=07f7c66bba623f50f2a9077bc1c887a6">
+										<img src="https://i.ibb.co/HPf6m37/3562140.png">
 									</v-avatar>
 								</v-list-item-avatar>
 								<v-list-item-content>
@@ -241,7 +243,7 @@
 									<v-avatar 
 										size="32"
 										tile>
-										<img src="https://cdn-icons.flaticon.com/png/512/869/premium/869161.png?token=exp=1636663835~hmac=15abb48c44a99b12d7ce90756885486f">
+										<img src="https://i.ibb.co/rQZZ1cc/869161.png">
 									</v-avatar>
 								</v-list-item-avatar>
 								<v-list-item-content>
@@ -262,18 +264,18 @@
 									<v-avatar 
 										size="32"
 										tile>
-										<img src="https://cdn-icons-png.flaticon.com/512/3011/3011121.png">
+										<img src="https://i.ibb.co/nnN96CT/2838614.png">
 									</v-avatar>
 								</v-list-item-avatar>
 								<v-list-item-content>
 									<v-list-item-title>
-										Craig Kellett
+										Mike Guy
 									</v-list-item-title>
 									<v-list-item-subtitle>
-										(781) 861-2295
+										(978) 457-4404
 									</v-list-item-subtitle>
 									<v-list-item-subtitle>
-										ckellet@tpx.com
+										mguy.co@gmail.com
 									</v-list-item-subtitle>
 								</v-list-item-content>
 								<v-list-item-action>
@@ -303,8 +305,6 @@
 								bottom>
 								<template v-slot:activator="{ on }">
 									<v-btn
-										:href="`https://dash.tpx.com/#page=Order&orderId=${order.account.orderID}`"
-										target="_blank" 
 										color="info"
 										v-on="on"
 										outlined
@@ -313,7 +313,7 @@
 									</v-btn>
 								</template>
 								<span class="text-body-1">
-									Click here to view order in the TPx Customer Portal
+									Click here to view order in the Customer Portal
 								</span>
 							</v-tooltip>
 						</div>
