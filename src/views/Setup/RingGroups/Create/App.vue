@@ -69,12 +69,6 @@
 								class="mb-5"
 								no-gutters>
 								<v-col cols="12" align="center">
-									<v-avatar
-										size="72"
-										tile>
-										<v-img 
-											src="https://www.flaticon.com/svg/static/icons/svg/3616/3616081.svg" />
-									</v-avatar>
 									<div class="mt-5 text-h5 text--primary font-weight-light">
 										Ring Group Profile
 									</div>
