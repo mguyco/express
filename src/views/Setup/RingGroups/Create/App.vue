@@ -207,12 +207,6 @@
 							align="end"
 							no-gutters>
 							<v-col offset="3" cols="6" align="center">
-								<v-avatar
-									size="72"
-									tile>
-									<v-img 
-										src="https://www.flaticon.com/svg/static/icons/svg/567/567893.svg" />
-								</v-avatar>
 								<div class="text-h5 text--primary font-weight-light">
 									Assign Users
 								</div>
