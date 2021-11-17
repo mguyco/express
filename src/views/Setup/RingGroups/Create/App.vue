@@ -7,58 +7,69 @@
 				class="mb-5" 
 				color="primary" 
 				dark> 
-				<v-tooltip bottom>
-					<template v-slot:activator="{ on }">
-						<v-btn 
-							@click="back"
-							v-on="on"
-							class="mr-5"
-							icon>
-							<v-icon>
-								mdi-arrow-left
-							</v-icon>
-						</v-btn>
-					</template>
-					Go back
-				</v-tooltip>
-				<v-toolbar-title style="width:300px">
-					<div>
-						<div v-if="group.name == '' || group.name == null">
-							Create New Ring Group
-						</div>
-						<div v-else>
-							{{ group.name }}
-						</div>
-						<div class="text-caption" style="opacity:0.66">
-							<div v-if="edit != null">
-								Edit Ring Group
+				<v-row no-gutters>
+					<v-col cols="8">
+						<v-tooltip bottom>
+							<template v-slot:activator="{ on }">
+								<v-btn 
+									@click="back"
+									v-on="on"
+									class="mr-5"
+									absolute 
+									large 
+									icon>
+									<v-icon large>
+										mdi-arrow-left
+									</v-icon>
+								</v-btn>
+							</template>
+							Go back
+						</v-tooltip>
+						<div class="text-h5 ml-15">
+							<div v-if="group.name == '' || group.name == null">
+								Create New Ring Group
 							</div>
 							<div v-else>
-								<div v-if="group.name != '' && group.name != null">
-									Create New Ring Group
+								{{ group.name }}
+							</div>
+							<div class="text-body-2" style="opacity:0.77">
+								<div v-if="edit != null">
+									Edit Ring Group
+								</div>
+								<div v-else>
+									<div v-if="group.name == '' || group.name == null">
+										Distribute inbound calls
+									</div>
+									<div v-else>
+										Creating new ring group
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</v-toolbar-title>
-				<v-tabs 
-					v-model="tab"
-					right>
-					<v-tab>
-						Profile
-					</v-tab>
-					<v-tab>
-						Users
-					</v-tab>
-				</v-tabs>
-				<v-spacer />
-				<v-btn 
-					@click="close"
-					icon>
-					<v-icon>
-						mdi-close
-					</v-icon>
-				</v-btn>
+					</v-col>
+					<v-col cols="3">
+						<v-tabs 
+							v-model="tab"
+							background-color="primary" 
+							right>
+							<v-tab>
+								Profile
+							</v-tab>
+							<v-tab>
+								Users
+							</v-tab>
+						</v-tabs>
+					</v-col>
+					<v-col cols="1" align="right">
+						<v-btn 
+							@click="close"
+							icon>
+							<v-icon>
+								mdi-close
+							</v-icon>
+						</v-btn>
+					</v-col>
+				</v-row>
 			</v-toolbar>
 			<v-tabs-items v-model="tab">
 				<!-- Profile -->
@@ -216,13 +227,13 @@
 							</v-col>
 							<v-col cols="2">
 								<v-tooltip
-									color="info"
+									color="primary darken-2"
 									multiline 
 									top>
 									<template v-slot:activator="{ on }">
 										<v-chip 
 											v-on="on" 
-											color="info"
+											color="primary"
 											style="cursor:pointer"
 											outlined>
 											<span class="text-body-1">
@@ -310,7 +321,7 @@
 									flat
 									outlined>
 									<div class="text-center pt-5">
-										<div class="text-h5 info--text">
+										<div class="text-h5 primary--text">
 											Ring Group
 										</div>
 									</div>
@@ -534,6 +545,6 @@ export default {
 }
 
 .assigned-list .sortable-chosen {
-	border: 2px dashed rgba(90,200,70,0.5) !important;
+	border: 2px dashed purple !important;
 }
 </style>

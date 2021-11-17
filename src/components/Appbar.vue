@@ -5,9 +5,7 @@
 		clipped-left 
 		dark 
 		app>
-		<v-fade-transition>
-			<!-- <v-app-bar-nav-icon /> -->
-		</v-fade-transition>
+		<v-app-bar-nav-icon />
 		<v-toolbar-title>
 			<!--
 			<svg width="216px" height="81px" viewBox="0 0 216 81">
@@ -38,9 +36,17 @@
 				</g>
 			</svg>
 		-->
-
-			<span class="text-h5 pl-5 font-weight-light" style="letter-spacing: 2px !important">
-				Express Setup for UCx
+			<v-avatar 
+				size="48" 
+				class="mr-1"
+				tile>
+				<v-img src="https://i.ibb.co/Y34pYRB/3049618.png" />
+			</v-avatar>
+			<span class="text-caption pl-3 white--text" style="position:absolute;top:44px;opacity:0.66">
+				Powered by VueJS
+			</span>
+			<span class="text-h4 font-weight-light" style="letter-spacing: 2px !important">
+				Express Setup
 			</span>
 		</v-toolbar-title>
 		<v-spacer />
@@ -99,8 +105,8 @@
 											{{ item.quantity.available }} Available 
 										</v-chip>
 										<v-chip 
-											class="ml-2 darken-1" 
-											color="orange"
+											class="ml-2" 
+											color="primary"
 											small
 											dark>
 											{{ item.quantity.used }} Used 
@@ -172,8 +178,8 @@
 											{{ item.quantity.available }} Available 
 										</v-chip>
 										<v-chip 
-											class="ml-2 darken-1" 
-											color="orange"
+											class="ml-2" 
+											color="primary"
 											small
 											dark>
 											{{ item.quantity.used }} Used 
@@ -301,11 +307,11 @@
 						</v-list>
 						<div class="pb-5 text-center">
 							<v-tooltip 
-								color="info"
+								color="primary darken-2"
 								bottom>
 								<template v-slot:activator="{ on }">
 									<v-btn
-										color="info"
+										color="primary"
 										v-on="on"
 										outlined
 										rounded>
@@ -369,7 +375,7 @@ export default {
 }
 
 .v-toolbar .v-toolbar__title span {
-	margin-left: 96px;
+	margin-left: 6px;
 }
 
 .v-toolbar .v-toolbar__content .v-badge .v-badge__badge {

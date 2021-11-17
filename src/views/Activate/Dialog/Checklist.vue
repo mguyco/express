@@ -13,7 +13,7 @@
 					<v-avatar 
 						size="72" 
 						tile>
-						<v-img src="https://image.flaticon.com/icons/svg/3063/3063835.svg" />
+						<v-img src="https://cdn-icons-png.flaticon.com/512/3063/3063835.png" />
 					</v-avatar>
 				</v-card-title>
 				<v-card-text class="text-body-1">
@@ -57,7 +57,7 @@
 		<div class="mt-3 text-center">
 			<v-icon 
 				size="64" 
-				color="grey lighten-1">
+				color="primary">
 				mdi-text-box-check
 			</v-icon>
 			<div class="mt-2 text-h5 text--primary">
@@ -165,7 +165,7 @@ export default {
 
 <style>
 #copy-text:hover {
-	color: #1976d2 !important;
+	color: purple !important;
 	cursor: default;
 }
 </style>

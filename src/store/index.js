@@ -73,21 +73,21 @@ const mutations = {
 		for(let key in snack) {
 			switch(key) {
 				case 'error':
-					state.snackbar.color = 'red'
+					state.snackbar.color = 'error'
 					state.snackbar.btn = true
 					state.snackbar.text = snack.error
 					state.snackbar.timeout = -1
 				break;
 
 				case 'success':
-					state.snackbar.color = 'green'
+					state.snackbar.color = 'success'
 					state.snackbar.btn = false
 					state.snackbar.text = snack.success
 					state.snackbar.timeout = 3000
 				break;
 
 				case 'loading':
-					state.snackbar.color = 'blue'
+					state.snackbar.color = 'primary'
 					state.snackbar.btn = false
 					state.snackbar.text = 'Loading'
 					state.snackbar.timeout = -1

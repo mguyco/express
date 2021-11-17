@@ -10,7 +10,7 @@
 			flat>
 			<v-card-title class="primary white--text">
 				<Toolbar 
-					:height="200"
+					:height="260"
 					:title="'Express Setup'" 
 					:subtitle="'Design and easily setup your UCx powered system the way you want it'" />
 			</v-card-title>
@@ -39,7 +39,7 @@
 								flat>
 								<v-card-text class="text-center">
 									<v-icon 
-										color="info"
+										color="primary"
 										size="128">
 										mdi-cog-outline
 									</v-icon>
@@ -61,7 +61,7 @@
 								flat>
 								<v-card-text class="text-center">
 									<v-icon 
-										color="info"
+										color="primary"
 										size="128">mdi-account-group
 									</v-icon>
 									<div class="text-h4">
@@ -82,7 +82,7 @@
 								flat>
 								<v-card-text class="text-center">
 									<v-icon 
-										color="info"
+										color="primary"
 										size="128">mdi-phone-ring
 									</v-icon>
 									<div class="text-h4">
@@ -98,12 +98,14 @@
 					<v-row class="mt-15">
 						<v-col cols="12" align="center">
 							<v-btn 
-								class="green white--text"
+								color="success"
 								@click="dialog.open = true"
 								:disabled="!valid"
 								:loading="loading"
 								x-large
-								rounded>Lets get started
+								rounded
+								dark>
+								Lets get started
 							</v-btn>
 							<div class="mt-5 text-body-1 pt-5 grey--text font-weight-light">
 								<div v-if="!activated">

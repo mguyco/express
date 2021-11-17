@@ -1,7 +1,10 @@
 <template>
-	<v-toolbar flat color="transparent" :height="height">
+	<v-toolbar 
+		color="transparent" 
+		:height="height"
+		flat>
 		<v-row>
-			<v-col cols="10" offset="1">
+			<v-col cols="12" align="center">
 				<!--
 				<svg width="216px" height="81px" viewBox="0 0 216 81">
 					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -31,6 +34,10 @@
 					</g>
 				</svg>
 			-->
+				<v-img 
+					width="84"
+					src="https://i.ibb.co/Y34pYRB/3049618.png" />
+
 				<div class="text-center">
 					<div class="text-h1 font-weight-thin white--text">
 						<span>{{ title }}</span>
