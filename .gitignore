@@ -1,8 +1,8 @@
 .DS_Store
 node_modules
-api
-public
-webex
+/api
+/public
+/webex
 
 # local env files
 .env.local
